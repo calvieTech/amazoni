@@ -4,14 +4,14 @@ import StarsIcon from "@material-ui/icons/";
 import { Rating } from "@mui/material";
 import { useStateValue } from "./StateProvider";
 
-function Product({ id, title, subtitle, price, isbn13, image, url }) {
+function Product({ title, subtitle, price, isbn13, image, url }) {
   const [{ basket }, dispatch] = useStateValue();
   const addToCart = () => {
     // dispatch the item into the data layer
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
-        id: id,
+        id: isbn13,
         title: title,
         subtitle: subtitle,
         image: image,

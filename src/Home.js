@@ -13,6 +13,7 @@ import "./Home.css";
 import Product from "./Product";
 import ProductList from "./ProductList";
 import Slider from "./Slider";
+import { v4 as uuidv4 } from "uuid";
 
 function Home(props) {
   const [products, setProducts] = useState([]);
