@@ -1,10 +1,4 @@
-Perfect — mentioning deployment on **Firebase Hosting** makes your project look production-ready and gives recruiters an easy way to try it.
-Here’s the updated **README.md** with Firebase deployment included:
-
----
-
-````markdown
-# 📚 IT Bookstore – E-Commerce Web App
+# 📚 Amazoni – E-Commerce Web App
 
 A front-end e-commerce web application inspired by Amazon, designed to sell IT books online.
 Users can browse books, add them to their cart, and create accounts to save their progress.
