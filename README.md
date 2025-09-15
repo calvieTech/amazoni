@@ -1,71 +1,120 @@
-# Getting Started with Create React App
+Perfect — mentioning deployment on **Firebase Hosting** makes your project look production-ready and gives recruiters an easy way to try it.
+Here’s the updated **README.md** with Firebase deployment included:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+````markdown
+# 📚 IT Bookstore – E-Commerce Web App
 
-In the project directory, you can run:
+A front-end e-commerce web application inspired by Amazon, designed to sell IT books online.
+Users can browse books, add them to their cart, and create accounts to save their progress.
+Built with **React**, **Material UI**, and **Firebase** for authentication, data storage, and deployment.
 
-### `npm start`
+🔗 **Live Demo:** [https://i-ff344.web.app/](https://i-ff344.web.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- **Browse IT Books**
+  - View a catalog with cover images, descriptions, and prices
+  - Search and filter by title, author, or category
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Add to Cart**
+  - Add/remove books from the cart
+  - Adjust quantities dynamically
+  - View real-time cart summary and total
 
-### `npm run build`
+- **User Authentication**
+  - Sign up / log in with **Firebase Authentication**
+  - Persist user sessions and cart data across refreshes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Responsive UI**
+  - Styled with **Material UI** for a clean, modern look
+  - Fully mobile-friendly experience
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Payment (Coming Soon)**
+  - Planned integration with **Stripe** for checkout and payments
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Deployed on Firebase**
+  - Hosted on **Firebase Hosting** for easy access and scalability
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend:** React, React Router
+- **UI Library:** Material UI (MUI v5)
+- **State Management:** React Context API (or Redux if used)
+- **Backend / Hosting:** Firebase Firestore (for book data & cart), **Firebase Hosting** (live deployment)
+- **Authentication:** Firebase Auth (Email/Password, Google Sign-In)
+- **Payments:** Stripe (planned, not implemented)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 📦 Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository and install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/calvieTech/amazoni.git
+cd it-bookstore
+npm install
+````
 
-### Code Splitting
+Create a `.env` file in the root directory and add your Firebase configuration:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-app.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-app.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+```
 
-### Analyzing the Bundle Size
+Then run the app locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+To deploy to Firebase Hosting (after installing the Firebase CLI):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+firebase login
+firebase init
+firebase deploy
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔮 Future Improvements
 
-### Deployment
+* Complete **Stripe** payment integration
+* Add order history and receipts
+* Implement ratings & reviews for books
+* Admin dashboard for adding/editing book listings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# amazoni2
+Pull requests are welcome! To contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes and open a pull request
+
+---
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+Developed by **calvieTech** – [LinkedIn](https://linkedin.com/in/calThang) | [GitHub](https://github.com/calvieTech)
